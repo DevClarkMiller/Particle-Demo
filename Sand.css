@@ -1,0 +1,44 @@
+body{
+    background-color: black;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid white;
+    padding: 0 15px;
+}
+
+header h1{
+    color: white;
+}
+
+nav{
+
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+
+#gridContainer{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid;
+    justify-content: center;
+    aspect-ratio: 1/1;
+}
+
+.gridPoint{
+    border: 1px solid white;
+    width: calc(1.09% - 2px); /* Adjusted width */
+    height: calc(1.09% - 2px); /* Adjusted width */
+    max-width: 10px;
+    max-height: 10px;
+}
