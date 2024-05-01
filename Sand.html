@@ -3,24 +3,51 @@
     <head>
         <title>Particle Physics</title>
         <link rel="stylesheet" href="Sand.css">
+
+        
     </head>
 
     <body onload="start()">
         <header>
-            <h1>Miller's Particle Physics Demo</h1>
+            <h1>Miller's Particle Physics Demo v1.2</h1>
             <nav>
                 <ul>
                     <li><a href="Sand.html">Home</a></li>
                     <li><a href="#">Socials</a></li>
-                    <li><a href="#">Github</a></li>
+                    <li><a href="https://github.com/DevClarkMiller?tab=repositories">Github</a></li>
                 </ul>
             </nav>
         </header>
 
-        <div id="gridContainer">
+        <div id="content">
+            <div id="stats">
+                <p id="particleCount">Particles on Screen:</p>
+                <p id="mousePOS">Mouse POS:(0, 0)</p>
 
+                <div id="rads">
+                    <ul>
+                        <li><label for="sand">Sand<input type="radio" id="sand" value="1" name="particleTypes" checked="true"></label></li>
+                        <li><label for="oxygen">Oxygen<input type="radio" id="oxygen" value="2" name="particleTypes"></label></li>
+                        <li><label for="water">Water<input type="radio" id="water" value="0" name="particleTypes"></label></li>
+                        <li><label for="stone">Stone<input type="radio" id="stone" value="4" name="particleTypes"></label></li>
+                        <li><label for="eraser">Eraser<input type="radio" id="eraser" value="3" name="particleTypes"></label></li>
+                        <li><label for="diagnostic">Diagnostic<input type="radio" id="diagnostic" value="5" name="particleTypes"></label></li>
+                    </ul>
+                    <div id="dropWidth">
+                        <p>Drop Width: </p>
+                        <input type="range" min="1" max="8" value="1" class="slider" id="slider">
+                        <p id="widthOutput">1</p>
+                    </div>
+                </div>
+
+                <div id="log"></div>
+            </div>
+
+            <canvas id="grid" width="100" height="100"></canvas>
+
+            <script src="Constants.js"></script>
+            <script src="Sand.js"></script>
+            <script src="SandClasses.js"></script>
         </div>
-
-        <script src="Sand.js"></script>
     </body>
 </html>

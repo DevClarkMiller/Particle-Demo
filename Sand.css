@@ -1,5 +1,26 @@
 body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: black;
+    padding: 0 0;
+    margin: 0 0;
+    height: 100vh;
+    padding-bottom: 100px;
+}
+
+#content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+}
+
+#stats{
+    margin-right: 35px;
+    padding: 0;
+    color: white;
 }
 
 header{
@@ -7,14 +28,16 @@ header{
     justify-content: space-between;
     border: 1px solid white;
     padding: 0 15px;
+    margin-bottom: 15px;
+    width: 90%;
 }
 
 header h1{
     color: white;
 }
 
-nav{
-
+p{
+    color: white;
 }
 
 nav ul{
@@ -26,19 +49,40 @@ nav a{
     text-decoration: none;
 }
 
-
-#gridContainer{
-    display: flex;
-    flex-wrap: wrap;
-    border: 1px solid;
-    justify-content: center;
-    aspect-ratio: 1/1;
+#grid{
+    width: 500px;
+    height: 500px;
+    background-color: rgb(71, 71, 71);
 }
 
-.gridPoint{
-    border: 1px solid white;
-    width: calc(1.09% - 2px); /* Adjusted width */
-    height: calc(1.09% - 2px); /* Adjusted width */
-    max-width: 10px;
-    max-height: 10px;
+#rads{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#stats ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#stats ul li:hover{
+    border-bottom: 2px solid yellow;
+}
+
+/*Change to radio buttons*/
+li h4{
+    padding: 0;
+    margin: 0;
+}
+
+#dropWidth{
+    display: flex;
+    flex-direction: row;
+}
+
+#slider{
+    width: 80px;
 }
